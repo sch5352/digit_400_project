@@ -149,6 +149,23 @@ def register_page():
     except Exception as e:
         return(str(e)) #remember to remove for debugging only
     
+    
+@app.route('/welcome/')
+def welcome_to_jinja():
+    try:
+        #This is where all the python goes:
+        
+        def my_function():
+            output = ["DIGIT 400 is good", "Python, Java. php, SQL, C++","<p><strong>hello world!</strong></p>", 42, "42"]
+            return output
+        
+        output = my_function()
+        
+        return render_template("templating_demo.html", output = output)
+    except Exception as e:
+        return str(e)
+    
+    
 ## Site Map
 @app.route('/sitemap.xml/', methods=["GET"])
 def sitemap():
@@ -167,6 +184,9 @@ def sitemap():
     
     except Exception as e:
         return(str(e))
+@app.route("/robots.txt")
+def robots():
+    return("User-agent: \nDisallow: /login \nDisallow: /register")
     
     
     

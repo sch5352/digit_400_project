@@ -1,0 +1,13 @@
+h1 {
+    color: red;/* this is a css comment! */
+    font-family: inherit;
+    
+}
+
+.loop { /*class selector!*/
+    color:#ff8913;
+}
+
+#basic {
+    color:#ff7845;
+}
