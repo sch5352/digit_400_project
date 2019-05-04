@@ -150,13 +150,13 @@ def register_page():
         return(str(e)) #remember to remove for debugging only
     
     
-@app.route('/welcome/')
+@app.route('/about/')
 def welcome_to_jinja():
     try:
         #This is where all the python goes:
         
         def my_function():
-            output = ["DIGIT 400 is good", "Python, Java. php, SQL, C++","<p><strong>hello world!</strong></p>", 42, "42"]
+            output = ""
             return output
         
         output = my_function()
@@ -164,6 +164,25 @@ def welcome_to_jinja():
         return render_template("templating_demo.html", output = output)
     except Exception as e:
         return str(e)
+    
+    
+    
+@app.route('/content/')
+def content():
+    try:
+        return render_template("content.html")
+    except Exception as e:
+        return str(e)
+    
+@app.route('/research/')
+def research():
+    try:
+        return render_template("research.html")
+    except Exception as e:
+        return str(e)
+        
+    
+ 
     
     
 ## Site Map

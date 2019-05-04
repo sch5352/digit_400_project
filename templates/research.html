@@ -1,0 +1,69 @@
+{% extends "header.html" %}
+
+{% block body %}
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Research</title>
+
+    <!-- CSS -->
+    <style>
+        h3.right-alignn {
+            margin-right: 400 px;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">Research</h2>
+    <p>Below you may find a selection of curated resources to better acquaint you with these avians. Media curated is
+    sourced from credible organizations, publications, and media outlets to ensure that all content is scientifically
+    accurate and literate. Please contact us with questions, concerns, or suggested literature relating to penguins.
+    Enjoy!</p>
+
+    <br>
+    <div id="NatGeoVideoTitle" style="display: flex">
+        <h3>National Geographic: The Melting of Antarctica</h3>
+    </div>
+    <div id="NatGeoVideo">
+        <video width="500" height="400" controls>
+            <source src="https://pmdvod.nationalgeographic.com/NG_Video/771/730/973618243521_1498142548591_973618243571_mp4_video_1024x576_1632000_primary_audio_eng_3.mp4"
+                    type="video/mp4">
+        </video>
+    </div>
+
+
+
+    <h3 align="center">Twitter Feeds</h3>
+    <div id="gpsTwitter" style="display: inline-block">
+        <a class="twitter-timeline" data-width="300" data-height="300" href="https://twitter.com/PENGUINS_GPS?ref_src=twsrc%5Etfw">Tweets by PENGUINS_GPS</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id="blTwitter" style="display: inline-block">
+        <a class="twitter-timeline" data-width="300" data-height="300" href="https://twitter.com/BirdLife_News?ref_src=twsrc%5Etfw">Tweets by BirdLife_News</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id="pfTwitter" style="display: inline-block">
+        <a class="twitter-timeline" data-width="300" data-height="300" href="https://twitter.com/PenguinFdn?ref_src=twsrc%5Etfw">Tweets by PenguinFdn</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div id="pdTwitter" style="display: inline-block">
+        <a class="twitter-timeline" data-width="300" data-height="300" href="https://twitter.com/Penguin_Daily?ref_src=twsrc%5Etfw">Tweets by Penguin_Daily</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <br>
+    <h3 class="right-alignn">Advanced Research & Source Links</h3>
+    <ul>
+        <li><a href="https://ocean.si.edu/ocean-life/seabirds/penguins">Smithsonian: Ocean</a></li>
+        <li><a href="http://www.academia.edu/Documents/in/Penguins">Academia.edu</a></li>
+        <li><a href="https://www.bas.ac.uk/about/antarctica/wildlife/penguins/">British Antarctic Survey</a></li>
+        <li><a href="https://link.springer.com/article/10.1007%2Fs00300-003-0563-3">Analysis of Avian Defaecation</a></li>
+        <li><a href="http://www.marineornithology.org/PDF/19/MO_1991_17.pdf">Marine Ornithology: Emperor Penguins</a></li>
+    </ul>
+
+
+
+{% endblock %}

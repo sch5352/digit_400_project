@@ -1,11 +1,8 @@
 def Content():
     APP_CONTENT = {
-    "Home":[["Welcome","/welcome/","Welcome to my awesome app!"],
-           ["Background","/background/", "Learn more about the app here!" ],
-           ["Messages","/messages/","Your user messages are waiting.."],],
-    "Profile":[["User Profile","/profile/", "Edit your profile here!"],
-              ["Settings","/settings/","App Settings, no biggie."],
-              ["Terms of Service","/tos/", "The legal stuff"],],
+    "Home":[["About","/about/","Click here to learn more about us!"],
+           ["Content","/content/", "Learn more about our feathered friends!" ],
+           ["Research","/research/","Dive deep into specialized literature!"],],
     "Messages":[["Messages","/messages", "Your user messages are here"],],
     "Contact":[["Contact","/contact/"],],
     }

@@ -10,9 +10,9 @@
 
       
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon(1).ico') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/antarctica.png') }}">
       
-    <title>DIGIT 400</title>
+    <title>Antarctic Avians</title>
       
     <script>
         $('#myModal').on('shown.bs.modal', function () {
@@ -29,21 +29,34 @@
       gtag('config', 'UA-136600867-1');
     </script>
 
-      
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
       
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600" rel="stylesheet">
+      
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
   
+    <style>
+      
+        html { 
+  background: url(https://wallpaperstream.com/wallpapers/thumbnails/penguin-hd/Adorable-Baby-Penguins-in-Snow_thumb2x.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+        
+    </style>  
+      
       
   </head>
   <body>
     <!-- Nav Bar -->  
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-sm fixed-top navbar-light"> 
           <a class="navbar-brand" href="/">
-            <img src="{{ url_for('static', filename='images/mainlogo.png')}}" width="30" height="30" alt="main logo for digit 400 site">
+            <img src="{{ url_for('static', filename='images/antarctica.png')}}" width="70" height="70" alt="main logo for digit 400 site">
   </a>
-  <a class="navbar-brand" href="/">DIGIT 400</a>
+  <a id="wordmark" class="navbar-brand" href="/">Antarctic Avians</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -52,32 +65,25 @@
       <li class="nav-item active">
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
-        {% if session.logged_in %}
+        
       <li class="nav-item">
         <a class="nav-link" href="/dashboard/">Dashboard</a>
       </li>
-        <li class="nav-item">
-        <a class="nav-link" href="/logout/">Logout</a>
-        </li>
-        {% else %}
+        
+       
       <li class="nav-item">
         <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModalCenter"><i class="material-icons">
 account_circle
 </i>Login</a>
       </li>
-          {% endif %}
+          
     </ul>
   </div>
 </nav> <!--END Nav Bar-->
       
       
       
-      <!--Video-->
-      <video autoplay muted loop style="width: 100%">
-          <source src="/static/videos/space_cats.mp4" type="video/mp4">
-
-      </video> 
-      
+    
       
       <!-- Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

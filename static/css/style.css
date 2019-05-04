@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Open+Sans');
+
 h1 {
     color: red;/* this is a css comment! */
-    font-family: inherit;
+    /*font-family: inherit; */
+    font-family: 'Arvo', serif;
     
+    
+}
+
+#wordmark {
+    /* Logo Wordmark */
+    font-family: 'Source Code Pro', monospace;
 }
 
 .loop { /*class selector!*/

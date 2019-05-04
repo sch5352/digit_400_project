@@ -4,64 +4,29 @@
 
 <!-- <p>{{output}}</p> -->
 
-<div class="container">
-    
-    <h1 id="basic">Basic Variable Output</h1>
-    <p>{{output}}</p>
-    
-    <hr>
-    
-    <h1 class="loop">Basic for Loops</h1>
-    
-    {% for item in output %}
-    
-        <p>{{item}}</p>
-    
-    {% endfor %}
-
-    <hr>
-    
-    <h1>if statement with |int</h1>
-    
-    {% if output[3]|int > 10 %}
-        <p>42 is greater than 10.</p>
-    {% endif %}
-    
-    <hr>
-    
-    <h1>.replace() method</h1>
-    
-    {{output[0]|replace('good','AMAZING!') }}
-    
-    <h1>Loop through a string with .split() and make a list</h1>
-    
-    <ul>
-    {% for lang in output[1].split(',') %}
-        <li>{{lang}}</li> 
-    {% endfor %}
-    </ul>
-    
-    <hr>
-    
-    <h1>Render HTML with |safe</h1>
-    
-    {{output[2]|safe}}
-    
-    <hr>
-    
-    <h1>The Raw Operator</h1>
-    
-    {% raw %}
-    <pre>
-    {% for i in items %}
-        {{i}}
-    {% endfor %}
-    </pre>
-    
-    {% endraw %}
-    
-    
-</div>  
 
 
+<style>
+    
+    div::after { content: ""; background: url(https://upload.wikimedia.org/wikipedia/commons/6/61/Snow_Landscape_at_the_South_Pole_%2811235793866%29.jpg); opacity: 0.5; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -1; background-color: #cccccc;
+ background-size:cover; }
+
+    
+    
+p {
+  font-size: 18px; 
+        font-family:monospace;
+    font-weight: bold;
+}
+    
+       
+    </style>     
+   <p>The Antarctic Avians project strives to create more than a webpage, but a space where people of all walks of life can appreciate one of the Earth’s greatest gifts of nature. This initiative aims to enrich the public with information and resources that may help individuals better understand and relate to these majestic avians in a manner appropriate with their education level. We seek not just to provide fun facts or entertain with pretty pictures, but also better integrate an understanding of penguins to show how they are just as equal and needing as we are as humans.</p> 
+   <p>Within this site you will find several links. Within the Content page you will find little snippets of information related to each Penguin as well as an adjoining picture. These little snippets aim to provide a basis for your interest into better understanding, acknowledging, and caring for species of penguins, though we feel that once you care for one you begin to care for them all. In future iterations of the site, on clicking these pictures you will be provided with detailed information on each species of penguin, including relevant history, diet, and status of the penguin today. All penguin pages will also include relevant conservation information to make the user more cognizant of their personal impact upon these majestic creatures.</p> 
+   <p>Another tab you will find is the Research tab. We aim to use this space to post new scientific journal articles, news articles, and more advanced information on the avians, their habitat, and current projects surrounding them. This space is meant to be for those who wish to further their knowledge beyond a basic construct and possibly find avenues in which they themselves can integrate themselves in the welfare of these avians. We hope that you enjoy the site and that it’s accessibility and breadth of information provides an understand, love, and admiration for these majestic beings. </p>       
+    
+   
+   
+
+    
 {% endblock %}
